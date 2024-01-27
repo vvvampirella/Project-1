@@ -1,0 +1,24 @@
+header{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+body {
+    background-color: rgb(100, 100, 224);
+    text-align: center;
+    padding: 30px;
+}
+
+button {
+text-align: center;
+
+}
+
+div {
+    padding: 20px;
+    color: white;
+}
