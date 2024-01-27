@@ -27,7 +27,10 @@ the first page will have the "movie trivia" option (button) and the "sport trivi
 // This will be a fun game to test players on their knowledge of their favorite niches!
 
 
+// link to my live sight https://prod.liveshare.vsengsaas.visualstudio.com/join?682B2A6B9A38AF1FC2E43530455C45904298
 
+
+// there is a bug i am missing something at the last minute and i cant figure it out so tomorrow i will ask. but css and html are done. also i had to simplify it because i underestimated the difficulty of my original plan.
 
 
 
