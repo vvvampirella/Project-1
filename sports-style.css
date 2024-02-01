@@ -3,17 +3,18 @@ header{
     font-size: 50px;
     color: white;
     text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
     background-color: rgb(100, 100, 224);
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 button {
 text-align: center;
-
+padding: 15x;
 }
 
 div {
