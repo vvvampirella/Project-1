@@ -1,5 +1,5 @@
 let questions = [
-  {question: 'What’s the diameter of a basketball hoop in inches?',
+  {question: 'what’s the diameter of a basketball hoop in inches?',
     answer: '18 inches'},
     {question: 'The Olympics are held every how many years?',
     answer: '4 years'},
@@ -120,13 +120,13 @@ console.log('random answer', randomQuestionsPair.answer);
 // questionDom.innerHTML = `<h1>${randomQuestionsPair.question}</h1>`
 
 
-let randomQuestionsDom = function(){
+let randomQuestionsDom = function(randomQuestionsPair){
   // generating question in DOM: web page
   return questionDom.innerHTML = `<h1>${randomQuestionsPair.question}</h1>`
 }
- randomQuestionsDom(); 
+ randomQuestionsDom(randomQuestionsPair); 
 
-
+ let score = 0;
 
 // submit button that will either show right or wrong
 const gameAnswer = document.querySelector('#answers');
@@ -135,11 +135,15 @@ const submit = document.querySelector('.sub');
 submit.addEventListener('click', function() {
 
   console.log(`///////////////////`)
-  randomQuestionsDom() // BUG this needs to generate a new question after the submit button is clicked
+
+
+
+
 
   // shows if the player is right
- if (gameAnswer.value.toLowerCase() == randomQuestionsPair.answer) {
+ if (gameAnswer.value.toLowerCase() == randomQuestionsPair.answer.toLowerCase()) {
   
+score ++
 
   document.querySelector('.winner').textContent = `Yay you are right!!`;
 
@@ -148,10 +152,11 @@ submit.addEventListener('click', function() {
   console.log('try again')
   document.querySelector('.winner').textContent = `try again`;
 
-
  }
 
 
+ randomQuestionsPair = getRandomQuestion(questions) 
+randomQuestionsDom(randomQuestionsPair);
 
 
 })
